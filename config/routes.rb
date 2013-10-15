@@ -1,4 +1,9 @@
 CakeMeOut::Application.routes.draw do
+  root :to => 'home#home'
+  get "path", to: 'controller#action', as: :name_of_path
+
+
+  get "home", to: "home#home", as: :home
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
