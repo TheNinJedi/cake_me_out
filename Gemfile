@@ -6,15 +6,39 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'simple_form'
+gem 'devise' # having an issue with it. not installing
+gem 'figaro'
+gem 'pry-rails'
+gem 'paperclip', "~> 3.0"
+gem 'jquery-rails'
 
-group :development do
-  gem 'pry-rails'
+group :development do 
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'meta_request'
   gem 'powder'
   gem 'xray-rails'
+  gem 'guard'
+  gem 'rb-fsevent', require: false
+  gem 'guard-pow'
+  gem 'guard-minitest'
+  gem 'guard-livereload'
+  gem "rack-livereload"
 end
+
+group :development, :test do
+  gem 'minitest-rails', github: 'blowmage/minitest-rails'
+  gem 'minitest-colorize'
+  gem 'factory_girl_rails', ">= 4.2.0"
+  gem 'ffaker'
+  gem 'letter_opener'
+  # gem "minitest-matchers"
+  # gem "email_spec" - is dependent on minitest-matchers - research these to help with 
+  # testing mailers - make sure to require them in test_helper.rb
+end
+
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -26,11 +50,9 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

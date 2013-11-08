@@ -19,3 +19,7 @@
 .ruby-version
 .DS-Store
 .powenv
+# Ignore application configuration
+/config/application.yml
+
+ToDo-Ideas.txt

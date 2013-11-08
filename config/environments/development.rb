@@ -1,4 +1,6 @@
 CakeMeOut::Application.configure do
+
+  config.middleware.use Rack::LiveReload
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
@@ -34,4 +36,19 @@ CakeMeOut::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  config.action_mailer.delivery_method = :letter_opener
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  # config.action_mailer.smtp_settings = {
+  # address:              'smtp.gmail.com',
+  # port:                 587,
+  # domain:               'localhost:3000',
+  # user_name:            ENV['GMAIL_EMAIL'],
+  # password:             ENV['GMAIL_PASSWORD'],
+  # authentication:       'plain',
+  # enable_starttls_auto: true  }
+
+
+
+Paperclip.options[:command_path] = "/usr/local/bin/"  
 end
