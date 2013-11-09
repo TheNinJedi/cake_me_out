@@ -1,6 +1,7 @@
 <div class="page-header">
   <h1> <%= link_to 'Cake Me Out', root_path %> <small>Cakes that make the occasion</small></h1>
 </div>
+
 <nav class="navbar navbar-default" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
@@ -10,19 +11,18 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <%= link_to 'CakeMeOut', root_path, class: 'navbar-brand' %>
-    <%# link_to 'Gallery' %>
-    <%# link_to 'Servings & Prices' %>
-    <%# link_to 'Flavors' %>
-    <%# link_to 'Order a Cake' %>
-    <%# link_to 'FAQ' %>
-    <%# link_to 'Testimonials' %>
-    
-
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li><%= link_to 'CakeMeOut', root_path, class: 'navbar-brand' %></li>
+        <li><%= link_to 'Gallery', galleries_path %></li>
+        <%# link_to 'Servings & Prices' %>
+        <%# link_to 'Flavors' %>
+        <%# link_to 'Order a Cake' %>
+        <%# link_to 'FAQ' %>
+        <%# link_to 'Testimonials' %>
+      </ul>
+    </div>
   </div>
-
-
-    
 
     <ul class="nav navbar-nav navbar-right">
       <li>
@@ -36,5 +36,6 @@
         </ul>
       </li> -->
     </ul>
-  </div><!-- /.navbar-collapse -->
+
+  <!-- </div> --><!-- /.navbar-collapse -->
 </nav>

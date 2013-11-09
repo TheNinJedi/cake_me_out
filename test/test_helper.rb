@@ -17,7 +17,7 @@ end
 
 class ActionController::TestCase
       include FactoryGirl::Syntax::Methods
-      # include Devise::TestHelpers
+      include Devise::TestHelpers
 end
 
 # Setup all fixtures in test/fixtures/*.(yml|csv) for all tests in alphabetical order.

@@ -1,4 +1,7 @@
 CakeMeOut::Application.routes.draw do
+  resources :galleries
+
+
   root :to => 'home#home'
   get "path", to: 'controller#action', as: :name_of_path
 

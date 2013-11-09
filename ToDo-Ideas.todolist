@@ -1,0 +1,38 @@
+
+
+  CakeMeOut:
+ ☐ put the contact information in the head space above the navbar. OR put the contact link to the form in that headspace.
+ ☐ Headspace needs to be constant across all pages.
+ ✔ FINISH gem installs. @done (13-11-08 21:00)
+   ✔ first i have to resolve the errors that wont allow me to do bundle installs on certain gems. @done (13-11-08 20:59)
+   ✔ Update Rails gem. It also wont allow me to update my gem 'rails', '3.2.13' to 3.2.15 like my portfolio project is. @done (13-11-08 21:00)
+   ✔ After i get devise running i need to uncomment the line in test_helper.rb @done (13-11-08 20:58)
+
+ ☐ 'Gallery'@started(13-11-08 21:07)
+   ☐ MVC stuff
+   ☐ link
+     @started(13-11-08 21:54) - i created the scaffold but now i wonder if i should have created a Cake scaffold... because the gallery/index page has a link for "new gallery" and i dont want to create a bunch of galleries... i want to have lots of cakes pics on the gallery page.
+
+ ☐ 'Servings & Prices'@started(13-11-08 21:07)
+   ☐ MVC stuff
+   ☐ link
+
+ ☐ 'Flavors'@started(13-11-08 21:07)
+   ☐ MVC stuff
+   ☐ link
+
+ ☐ 'Order a Cake'@started(13-11-08 21:07)
+   ☐ MVC stuff
+   ☐ link
+
+ ☐ 'FAQ'@started(13-11-08 21:07)
+   ☐ MVC stuff
+   ☐ link
+
+ ☐ 'Testimonials'@started(13-11-08 21:07)
+   ☐ MVC stuff
+   ☐ link
+  
+  Look at onesweetslice.com as inspiration for the eventual design.
+  
+  she also likes saltcakecity.com

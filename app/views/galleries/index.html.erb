@@ -1,0 +1,28 @@
+<h1>Cake Gallery</h1>
+
+<table>
+  <tr>
+    <th>Cake name</th>
+    <th>Type</th>
+    <th>Description</th>
+    <th>Completed at</th>
+    <th>Servings</th>
+  </tr>
+
+<% @galleries.each do |gallery| %>
+  <tr>
+    <td><%= gallery.cake_name %></td>
+    <td><%= gallery.type %></td>
+    <td><%= gallery.description %></td>
+    <td><%= gallery.completed_at %></td>
+    <td><%= gallery.servings %></td>
+    <td><%= link_to 'Show', gallery %></td>
+    <td><%= link_to 'Edit', edit_gallery_path(gallery) %></td>
+    <td><%= link_to 'Destroy', gallery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gallery', new_gallery_path %>
