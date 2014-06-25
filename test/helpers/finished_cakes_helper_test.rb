@@ -1,6 +1,6 @@
 require "test_helper"
 
-class GalleriesHelperTest < ActionView::TestCase
+class FinishedCakesHelperTest < ActionView::TestCase
 
   def test_sanity
     flunk "Need real tests"

@@ -1,12 +1,22 @@
 CakeMeOut::Application.routes.draw do
-  resources :galleries
 
 
-  root :to => 'home#home'
   get "path", to: 'controller#action', as: :name_of_path
+  
+  root :to => 'cakemeout#index'#, as: :index
+
+  resources :finished_cakes
+
+  resources :cakemeout do
+    collection do
+      get 'serv_and_price'
+      get 'cake_order'
+    end
+  end
+end
 
 
-  get "home", to: "home#home", as: :home
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -63,4 +73,4 @@ CakeMeOut::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
-end
+

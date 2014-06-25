@@ -1,0 +1,2 @@
+module FinishedCakesHelper
+end

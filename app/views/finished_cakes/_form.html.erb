@@ -1,11 +1,11 @@
-<%= simple_form_for(@gallery) do |f| %>
+<%= simple_form_for(@finished_cake) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
     <%= f.input :cake_name %>
-    <%= f.input :type %>
+    <%= f.input :cake_type %>
     <%= f.input :description %>
-    <%= f.input :completed_at %>
+    <%= f.input :completed_at, include_blank: true %>
     <%= f.input :servings %>
   </div>
 
